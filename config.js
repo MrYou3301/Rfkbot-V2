@@ -74,6 +74,7 @@ global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=tr
 
 // Ubah saja SC dari AlyaaXzy
 global.image = 'https://telegra.ph/file/9b04c955370e35e29dde3.jpg'//thumbnail
+global.thumb = 'https://telegra.ph/file/076027b0fe8ac97bf4847.jpg'//Foto Bot
 
 // tingkat kesulitan, semakin tinggi semakin susah
 global.multiplier = 200 // The higher, The harder levelup

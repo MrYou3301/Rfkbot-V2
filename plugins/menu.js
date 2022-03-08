@@ -221,7 +221,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `*HAI KAK ${name}, ${ucapan()}*\nSupport Owner Siesta\nDengan:\n*Github: github.com/mryou3301*\n*Donasi: Pulsa Im3 0857 4234 4873*\n*Grub Siesta-Bot : https://bit.ly/3tBfONu*\n*Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.*`.trim(),
                         "description": `[❗] Gunakan Bot Dengan Baik!!!`.trim(),
-                        "footerText": "Siesta-Bot By MR YOU3301",
+                        "footerText": "Siesta-Bot",
                         "buttonText": "*Click Me>_<*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -465,7 +465,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await(await fetch(fla + teks)).buffer(), text.trim(), `Runtime : ${uptime}\n${week} ${date}`, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonLoc(m.chat, await(await fetch(thumb)).buffer(), text.trim(), `Runtime : ${uptime}\n${week} ${date}`, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
